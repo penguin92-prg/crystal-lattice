@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+:root{
+  /* 数値 */
+
+  /* 色 */
+  --base1: #ffffff;
+  --base2: #f5f5f5;
+  --base3: #e6e6e6;
+  --base4: #cccccc;
+
+  --blue1: #eaebf4;
+  --blue2: #acb2e4;
+  --blue2-title: #acb2e488;
+  --blue3: #9d89e4;
+  --blue4: #8162e6;
+  --blue5: #6841e5;
+
+  --text1: #222222;
+  --text2: #666666;
+  --text3: #ffffff;
+
+  /* パラメータ */
+  --shadow: 0 0 0.5rem rgba(0 0 0 / 8%);
+}

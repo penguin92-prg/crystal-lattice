@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/* ページ･DOMオブジェクト全般のスタイル指定 */
+html, body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 8px;
+  
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ページ本体 */
+html{
+  background-color: var(--base1);
+  
+  touch-action: manipulation;
+}
+
+/* DOMオブジェクト全体 */
+body{
+  background-color: var(--base1);
+}
+
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+
+/* タイトル */
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 100%;
+  height: 50dvh;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--blue2-title);
+  background-image: url(../image/title-background.jpg);
+  background-position: center;
+  background-size: cover;
+
+  background-blend-mode: screen;
+}
+
+header>h2{
+  display: block;
+
+  width: 80%;
+  height: auto;
+
+  margin: 0 10%;
+  padding: 0;
+
+  color: var(--text1);
+  font-weight: 500;
+  font-family: Noto Sans JP, sans-serif;
+  font-size: 2rem;
+
+  text-decoration: none;
+  text-align: left;
+  line-height: 2.4rem;
+  letter-spacing: 0;
+}
+
+header>h1{
+  display: block;
+
+  width: 80%;
+  height: auto;
+
+  margin: 0 10%;
+  padding: 0;
+
+  color: var(--text1);
+  font-weight: 600;
+  font-family: Noto Sans JP, sans-serif;
+  font-size: 3rem;
+
+  text-decoration: none;
+  text-align: left;
+  line-height: 3.6rem;
+  letter-spacing: 0;
+}
+
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+
+div#description{
+  display: block;
+
+  width: 80%;
+  height: auto;
+
+  margin: 8rem auto;
+  padding: 0;
+}
+
+div>h3{
+  position: relative;
+
+  display: block;
+
+  width: calc(100% - 2rem);
+  height: 2.4rem;
+
+  margin: 2rem 0 2rem 2rem;
+  padding: 0;
+
+  color: var(--text1);
+  font-weight: 500;
+  font-family: Noto Sans JP, sans-serif;
+  font-size: 2rem;
+
+  text-decoration: none;
+  text-align: left;
+  line-height: 2.4rem;
+  letter-spacing: 0;
+}
+div>h3::before{
+  content: "";
+
+  position: absolute;
+  left: -2rem;
+  top: 0;
+
+  display: block;
+
+  width: 1rem;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--blue2);
+}
+
+div#description>p{
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  margin: 2rem 0;
+  padding: 0;
+
+  color: var(--text1);
+  font-weight: 400;
+  font-family: Noto Sans JP, sans-serif;
+  font-size: 1.75rem;
+
+  text-decoration: none;
+  text-align: justify;
+  line-height: 2.1rem;
+  letter-spacing: 0;
+}
+
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+
+div#datalist{
+  display: block;
+
+  width: 80%;
+  height: auto;
+
+  margin: 8rem auto;
+  padding: 0;
+}
+
+div#datalist>div#dataContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: 100%;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+}
+
+div#datalist>div#dataContainer>div.data{
+  display: grid;
+  grid-template-columns: 1fr 12.5rem;
+
+  width: calc(100% - 2rem * 2);
+  height: 12.5rem;
+
+  margin: 0;
+  padding: 2rem;
+
+  border: none;
+  border-radius: 1rem;
+
+  background-color: var(--base2);
+
+  box-shadow: var(--shadow);
+}
+
+div#datalist>div#dataContainer>div.data>span{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+div#datalist>div#dataContainer>div.data>span>h4{
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+
+  color: var(--text1);
+  font-weight: 500;
+  font-family: Noto Sans JP, sans-serif;
+  font-size: 1.75rem;
+
+  text-decoration: none;
+  text-align: left;
+  line-height: 2.1rem;
+  letter-spacing: 0;
+}
+
+div#datalist>div#dataContainer>div.data>span>p{
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+
+  color: var(--text1);
+  font-weight: 400;
+  font-family: Noto Sans JP, sans-serif;
+  font-size: 1.5rem;
+
+  text-decoration: none;
+  text-align: left;
+  line-height: 1.8rem;
+  letter-spacing: 0;
+}
+
+div#datalist>div#dataContainer>div.data>img{
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--base1);
+}
+
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+
+/* フッター */
+footer{
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  margin: 0;
+  padding: 4rem 0;
+}
+
+/* フッター｜コピーライト表示 */
+footer>p{
+  display: block;
+
+  width: 100%;
+  height: 1.25rem;
+
+  margin: 0;
+  padding: 0;
+
+  color: var(--text2);
+  font-weight: 400;
+  font-family: Noto Sans JP, sans-serif;
+  font-size: 1.25rem;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.25rem;
+  letter-spacing: 0;
+}
