@@ -37,20 +37,20 @@ header{
   gap: 1rem;
 
   width: 100%;
-  height: 50dvh;
+  height: auto;
 
   margin: 0;
-  padding: 0;
+  padding: 2rem 0;
 
   background-color: var(--blue2-title);
-  background-image: url(../image/title-background.jpg);
+  background-image: url(../../asset/image/title-background.jpg);
   background-position: center;
   background-size: cover;
 
   background-blend-mode: screen;
 }
 
-header>h2{
+header>a{
   display: block;
 
   width: 80%;
@@ -70,41 +70,20 @@ header>h2{
   letter-spacing: 0;
 }
 
-header>h1{
-  display: block;
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+/* ==================================================================================================== */
+div#datalist{
+  display: flex;
+  flex-direction: column;
 
   width: 80%;
   height: auto;
 
-  margin: 0 10%;
-  padding: 0;
-
-  color: var(--text1);
-  font-weight: 600;
-  font-family: Noto Sans JP, sans-serif;
-  font-size: 3rem;
-
-  text-decoration: none;
-  text-align: left;
-  line-height: 3.6rem;
-  letter-spacing: 0;
+  margin: 5rem auto 10rem auto;
 }
 
-/* ==================================================================================================== */
-/* ==================================================================================================== */
-/* ==================================================================================================== */
-
-div#description{
-  display: block;
-
-  width: 80%;
-  height: auto;
-
-  margin: 8rem auto;
-  padding: 0;
-}
-
-div>h3{
+div#datalist>h3{
   position: relative;
 
   display: block;
@@ -125,7 +104,7 @@ div>h3{
   line-height: 2.4rem;
   letter-spacing: 0;
 }
-div>h3::before{
+div#datalist>h3::before{
   content: "";
 
   position: absolute;
@@ -141,40 +120,6 @@ div>h3::before{
   padding: 0;
 
   background-color: var(--blue2);
-}
-
-div#description>p{
-  display: block;
-
-  width: 100%;
-  height: auto;
-
-  margin: 2rem 0;
-  padding: 0;
-
-  color: var(--text1);
-  font-weight: 400;
-  font-family: Noto Sans JP, sans-serif;
-  font-size: 1.75rem;
-
-  text-decoration: none;
-  text-align: justify;
-  line-height: 2.1rem;
-  letter-spacing: 0;
-}
-
-/* ==================================================================================================== */
-/* ==================================================================================================== */
-/* ==================================================================================================== */
-
-div#datalist{
-  display: block;
-
-  width: 80%;
-  height: auto;
-
-  margin: 8rem auto;
-  padding: 0;
 }
 
 div#datalist>div#dataContainer{
@@ -285,8 +230,8 @@ footer{
   width: 100%;
   height: auto;
 
-  margin: 0;
-  padding: 4rem 0;
+  margin: 4rem 0;
+  padding: 0;
 }
 
 /* フッター｜コピーライト表示 */
